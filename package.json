@@ -3,28 +3,24 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "nuxt start",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "npm run build && wrangler dev",
     "postinstall": "nuxt prepare",
     "deploy": "npm run build && wrangler deploy",
-    "cf-typegen": "wrangler types",
-    "login": "wrangler login"
+    "cf-typegen": "wrangler types"
   },
   "dependencies": {
-    "http-proxy-middleware": "^3.0.3",
+    "axios": "^1.7.9",
     "nuxt": "^3.15.1",
-    "nuxt-proxy": "^0.4.1",
-    "sqlite3": "^5.1.7",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20241230.0",
+    "@cloudflare/workers-types": "^4.20250109.0",
     "nitro-cloudflare-dev": "^0.2.1",
     "nitropack": "^2.10.4",
-    "wrangler": "^3.99.0"
+    "wrangler": "^3.100.0"
   }
 }
